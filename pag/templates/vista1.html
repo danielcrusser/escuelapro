@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Tacos Online</title>
+</head>
+<body>
+
+    {% include "superior/barra.html" %}
+    <h3><strong>Tacos Online</strong></h3>
+    <h3>Hoy taco Especial al 2x1 que es de: {{ingrediente_1 | upper}} && {{ingrediente_2 | upper}}</h3>
+    
+    <div>Men&uacute; de Tacos</div>
+    
+    
+    <menu>
+       <!-- <center>
+                <li>
+        
+                    <ul>gringas</ul>
+                    <ul>Tacos</ul>
+                    <ul>tortugas</ul>
+                    <ul>los famosos envueltos</ul>
+                    <ul>burguersss Online</ul>
+        
+        
+                </li>
+        </center>
+        -->
+        <p><strong>gringas de:</strong></p>
+
+    <ul>
+    {% for g in gringas %}
+
+        <li>{{ g }}</li>
+            
+    {% endfor %}
+    </ul>
+    </menu>
+
+    <menu>
+        <h4>TORTUGAS</h4>
+        <li>
+            <ul>campechana</ul>
+            <ul>sudero</ul>
+            <ul>pastor</ul>
+            <ul>bistek</ul>
+            <ul>Ñonganiza</ul>
+            <ul>tripa</ul>
+        </li>
+    </menu>
+    <P>HORA: d&iacute;a: {{fecha}} </P>
+</body>
+</html>
